@@ -1,0 +1,73 @@
+@import url("https://fonts.gstatic.com"); 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+html, body {
+    height: 100%;
+    width:100%;
+    padding: 2%
+}
+
+body{
+    font-family: Montserrat, "Roboto", Helvetica, Arial, "sans-serif";
+    font-size: 1rem;
+    padding: 2%;
+  
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(0px 1px 6px rgba(251, 199, 66, 0.3));
+  }
+
+header img {
+    width: 157px;
+    height: 38px;
+    left: 53px;
+    top: 13px;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+header nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: rgba(35,35,35,1);
+    padding: 1em;
+    justify-content: space-between;
+    top:175px;
+    left:35px;
+    margin-top: 0px;
+    margin-left: 400spx;
+  }
+
+h1 {
+    color: #FF428A;
+}
+
+li {
+    list-style-type: none;
+    display: flexbox;
+}
+
+input {
+  fill-opacity: #FF428A;
+width: 233px;
+height: 75px;
+left: 110px;
+top: 566px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
