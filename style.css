@@ -141,7 +141,57 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 30%;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
+.carteverte {
+  width: 161px;
+  height: 274px;
+  background: rgba(152,212,187,1);
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+  position: absolute;
+  
+}
+.cartemauve {
+  width: 148px;
+  height: 234px;
+  background: rgba(189,178,255,1);
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+  position: absolute;
+}
+
+  .cartesaumon {
+    width: 137px;
+    height: 234px;
+    background: rgba(248,173,157,1);
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+    position: absolute;
+  }
+
+  .carterose {
+    width: 116px;
+    height: 196px;
+    background: rgba(235,150,170,1);
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+    position: absolute;
+     }
+  .cartebleue {
+    width: 116px;
+    height: 196px;
+    background: rgba(154,217,219,1);
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+    position: absolute;
+    }
+
 .zone4 {
   /*background-image: url(img/arc.svg);
   background-size: 100%;*/
@@ -152,7 +202,20 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .zone5 {
   background-image: url(img/fond5.svg);
   background-size: 100%;
-  padding: 30%;
+  margin: auto;
+  text-align: left;
+
+  
+}
+.box {
+  display: block;
+  width: 779px;
+  height: 309px;
+  background: rgba(255,255,255,);
+  border-radius: 40px;
+  box-shadow: 1px 3px 4px rgb(1 1 1 / 25%);
+  object-position: inherit;
+  margin: auto;
 }
 
 .button {
@@ -175,14 +238,15 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: rgb(194, 1, 97);
 }
 
+
 footer {
 font-size: 10px;
 display: flex;
 justify-content: space-between;
-padding: 1rem;
+padding-top: 10rem;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px) { 
   .zone2-layout {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
