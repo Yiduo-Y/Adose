@@ -238,6 +238,18 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: rgb(194, 1, 97);
 }
 
+.bouttonbas{
+  display: block;
+  background-color:#FF428A ;
+  text-decoration-line: none;
+  color: white;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 15px 32px; 
+  margin-top : 30px;
+  transition: .3s ease-in-out;
+}
 
 footer {
 font-size: 10px;
