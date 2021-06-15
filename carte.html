@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CarteQuizz</title>
+    <link rel="stylesheet" href="c-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="burger">
+        <span></span>
+    </div>
+    <a href="index.html"><img src="img/logofinal.svg" alt=""></a>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Thèmes</a></li>
+                <li><a href="carte.html">Cardquizz</a></li>
+                <li><a href="marionettes.html">Le corps</a></li>
+                <li><a href="#">Associations</a></li>
+            </ul>
+        </nav>
     
+    </header>
+
+    <main>
+        <section class="zone1">
+            <div>
+                <a href="#" class="selection"><h1>Puberté chez les garçons</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone2">
+            <div>
+                <a href="page-filles.html" class="selection"><h1>Puberté chez les filles</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone3">
+            <div>
+                <a href="#" class="selection"><h1>Relations sexuelles</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone4">
+            <div>
+                <a href="#" class="selection"><h1>Les premières fois</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone5">
+            <div>
+                <a href="#" class="selection"><h1>Contraception</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone6">
+            <div>
+                <a href="#" class="selection"><h1>Pornographie</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone7">
+            <div>
+                <a href="#" class="selection"><h1>Masturbation</h1></a>
+            </div>  
+        </section>
+
+        <section class="zone8">
+            <div>
+                <a href="#" class="selection"><h1>ISTT</h1></a>
+            </div>  
+        </section>
+
+
+    </main>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $('.burger').click(function(){
+            $('.header').toggleClass('open');
+            $('.burger').toggleClass('active');
+        });
+    });
+    </script>
 </body>
 </html>
