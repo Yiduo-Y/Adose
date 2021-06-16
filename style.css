@@ -98,7 +98,7 @@ h1{
 h2{
 margin: auto;
 font-size: 30px;
-padding-top: 20px;
+padding-top: 35px;
 }
 
 h3{
@@ -172,9 +172,18 @@ p{
   /* padding: 2rem 1rem; */
 }
 
+.block:hover,
+.block:focus {
+  box-shadow: 8px 8px 48px #A073A7(235,150,170,0.5);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
 .imageblock {
   width: 70%;
   height: auto;
+ 
 
 }
 .zone3 {
