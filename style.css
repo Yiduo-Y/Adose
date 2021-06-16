@@ -34,14 +34,14 @@ body{
 
 header img {
     width: 100%;
-    height: 70%;
- 
+    height: 80%;
+    margin: 0.2px 2px 0 0 ;
 }
 
 header nav ul li{
     list-style-type: none;
     display: inline-block;
-    font-weight: bold;
+    font-weight: bolder;
     min-height: 10px;
     max-height: 200px;
   }
@@ -54,7 +54,7 @@ header nav ul li a{
     color: rgba(35,35,35,1);
     padding: 1em;
     justify-content: space-between;
-    top:175px;
+    top:200px;
     left:35px;
   }
 
@@ -82,8 +82,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 .zone1 {
   display: flex;
-  /*background-color: #FFFCF8;*/
-  padding: 10%;
+  padding: 280px 100px 50px 50px ;
   background-repeat: no-repeat;
   justify-content: space-between;
   text-align: left;
@@ -92,24 +91,15 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 h1{
   text-align: left;
   font-weight: bold;
-  font-size: 46px;
+  font-size: 200%;
  /*font-size: calc(1rem + 1vw);*/
 }
 h2{
-margin: auto;
-font-size: 30px;
-padding-top: 35px;
+text-align: center;
+font-size: 40px;
+padding-top: 0.3%;
 }
 
-h3{
-
-}
-h4{
-
-}
-h5{
-
-}
 h6{
   margin-top: 10px;
   text-align: left;
@@ -117,24 +107,15 @@ h6{
 p{
   font-size: 20px;
   margin: auto;
+  text-align: left;
 }
-
-
-@media (min-width: 400px) {
-  h1 {
-   font-size: calc(1rem + 1vw);
- } 
-   p{
-  font-size: calc(0.5rem + 1vw);
-} 
+.soustitre{
+  text-align: center;
 }
-
 
 .zone2 {
-  /* background-image: url(img/forme.svg);*/
-  background-size: 100%;
+  margin-top: 25%;
   text-align: center;
-  margin-top: 20rem;
 }
 
 .zone2-layout {
@@ -142,8 +123,8 @@ p{
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1rem;
   row-gap: 10px;
-  max-width: 35rem;
-  margin: 1rem auto 0 auto;
+  max-width: 65rem;
+  margin: 3rem auto 0 auto;
 }
 
 .button23{
@@ -166,8 +147,12 @@ p{
 }
 
 .block {
+  color:white;
   text-align: center;
-  background-color: #A073A7;
+  display: inline-flexbox;
+  font-size: 1rem;
+  background-color: #B38FB8;
+  width: 250px;
   border-radius: 5px;
   /* padding: 2rem 1rem; */
   
@@ -178,20 +163,21 @@ p{
   box-shadow: 8px 8px 48px #A073A7(235,150,170,0.5);
   cursor: pointer;
   transform: scale(1.1);
+  background-color: #D898E2;
 }
-
 
 .imageblock {
   width: 70%;
   height: auto;
- 
-
+  position: relative;
 }
+
 .zone3 {
   padding: 15%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
+  text-align: center;
 }
 
 .cartes-container {
@@ -214,6 +200,18 @@ p{
     box-shadow: 8px 8px 48px rgba(152,212,187,1);
     cursor: pointer;
     transform: scale(1.25);
+    color:white;
+}
+
+.D-text{
+  color: black;
+  font-size: 100%;
+  margin:4px 5px 2px 1rem;
+}
+.imagetheme{
+  width: 110%;
+  height: auto;
+  position: relative;
 }
 .cartemauve {
   width: 148px;
@@ -229,6 +227,7 @@ p{
     box-shadow: 8px 8px 48px rgba(189,178,255,1);
     cursor: pointer;
     transform: scale(1.25);
+    color:white;
 }
 
   .cartesaumon {
@@ -245,6 +244,7 @@ p{
     box-shadow: 8px 8px 48px rgba(248,173,157,1);
     cursor: pointer;
     transform: scale(1.25);
+    color:white;
 }
 
   .carterose {
@@ -261,6 +261,7 @@ p{
     box-shadow: 8px 8px 48px rgba(235,150,170,1);
     cursor: pointer;
     transform: scale(1.25);
+    color:white;
 }
   .cartebleue {
     width: 148px;
@@ -275,18 +276,17 @@ p{
       box-shadow: 8px 8px 48px rgba(154,217,219,1);
       cursor: pointer;
       transform: scale(1.25);
+      color:white;
   }
 
 .zone4 {
-  /*background-image: url(img/arc.svg);
-  background-size: 100%;*/
   padding: 30%;
-  background-repeat: no-repeat;
 }
 .marionette{
   width: 30%;
-  display:inline-block;
-  
+  display:inline table;
+  margin-left:5rem;
+  justify-content: space-between;
 }
 
 .zone5 {
@@ -307,10 +307,19 @@ p{
   object-position: inherit;
   margin: auto;
 }
+
+h3{
+  font-size: 120%;
+}
+
+h4{
+  font-size: 80%;
+}
 .adoseaide{
-  margin: auto;
+  margin: 1rem 2rem 1rem 1rem;
   padding-top: 3rem;
   padding: 20px 40px;
+  text-align: left;
 }
 
 .button {
@@ -341,7 +350,6 @@ p{
   width: 300px;
   text-align: center;
   padding: 15px 32px; 
-  
   transition: .3s ease-in-out;
   margin: auto;
   margin-top: 7rem;
@@ -355,12 +363,30 @@ footer {
 font-size: 10px;
 display: flex;
 justify-content: space-between;
-padding-top: 10rem;
-padding-right: 5rem;
-padding-left: 5rem;
+padding: 10rem 2rem 2rem 2rem;
 }
 
 @media screen and (max-width:900px) { 
+  header nav ul li a{
+    opacity: 0;
+  }
+  header img {
+    margin: 2px 3px ;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+}
+  h1 {
+    font-size: calc(1rem + 1vw);
+    text-align: left;
+  } 
+  h2 {
+    font-size: calc(1rem + 1vw);
+  } 
+    p{
+   font-size: calc(0.5rem + 1vw);
+   text-align: left;
+ } 
   .zone2-layout {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -377,6 +403,8 @@ padding-left: 5rem;
   .zone1{
     text-align: center;
     margin-top: 2rem;
+    margin-left: 0.5rem;
+    padding-top: 20%;
   }
 
   .zone1 a{
@@ -384,23 +412,119 @@ padding-left: 5rem;
   }
 
   .zone2 {
-    padding-top: 10rem;
+    text-align: center;
+    margin: 1rem;
+    padding-top: 5rem;
+  }
+  .soustitre{
+    text-align: center;
+  }
+  .block {
+    width: 100px;
+    height:120px;
+    font-size: 0.6rem;
+    margin-left: 1rem;
   }
 
   .zone3{
     text-align: center;
-    margin-top: 20rem;
-    padding:4rem;
+    margin-top: 6rem;
+    padding:1rem;
+  }
+  .cartes-container {
+    margin-left: 1rem;
+  }
+  .imagetheme{
+    width: 100%;
+  }
+  .carteverte {
+    width: 25%;
+    height: 5%;
+    font-size: 60%;
+  }
+  .cartemauve {
+    width: 25%;
+    height: 5%;
+    font-size: 60%;
+  }
+  .carterose {
+    width: 25%;
+    height: 5%;
+    font-size: 60%;
+  }
+  .cartebleue {
+    width: 25%;
+    height: 10%;
+    font-size: 60%;
+  }
+  .cartesaumon {
+    width: 40%;
+    height: 10%;
+    font-size: 60%;
   }
   .zone4{
     text-align: center;
     margin-top: 4rem;
-    padding:4rem;
+    padding:1rem;
     
   }
   .zone5{
     margin-top: 4rem;
     padding:4rem;
+  }
+  .marionette{
+    margin-left:1rem;
+  }
+  .box {
+    width: 100%;
+    height: 10%;
+  }
+  .adoseaide{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 2rem 2px;
+  }
+
+  .bouttonbas{
+    margin-top: 2rem;
+    width: 200px;
+  }
+
+  .footer{
+    padding:1%;
+  }
+
+  .burger{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding: 6px 0;
+    cursor: pointer;
+    z-index: 100;
+    mix-blend-mode: difference;
+  }
+  .burger span,
+  .burger span:before,
+  .burger span:after{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #383838;
+    transition: 0.3s;
+    transform-origin: center;
+  }
+  .burger span:before,
+  .burger span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+  }
+  .burger span:before{ top: 0px;}
+  .burger span:after{ bottom: 0px;}
+  
+  .burger:hover span,
+  .burger.active span{
+    background-color: rgba(255,255,255,0);
   }
 }
 
