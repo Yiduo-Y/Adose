@@ -16,7 +16,7 @@ html, body {
 body{
     font-family: Montserrat, "Roboto", Helvetica, Arial, "sans-serif";
     font-size: 1rem;
-    background-color: #FFFCF8;
+    background-color: #FF7199;
   }
 
 h1{
@@ -83,6 +83,12 @@ h1{
     padding: 2em 2em;
   }
   
+  .img-header {
+    padding:2rem 1rem 1rem 2rem;
+  }
+.zone1{
+  background-color: #FFFCF8;
+}
   header.open{
     transform: translateX(0);
   }
@@ -107,4 +113,31 @@ header ul li {
 
 .selection{
     text-decoration: none;
+}
+.imageblock {
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+
+.zone3-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 10px;
+  max-width: 65rem;
+  margin: 2rem 0.5rem 0 0;
+}
+
+.block {
+  color:black;
+  text-align: center;
+  display: inline-flexbox;
+  font-size: 1rem;
+  background-color: white;
+  width: 150px;
+  height:280px;
+  border-radius: 5px;
+  /* padding: 2rem 1rem; */
+  
 }
