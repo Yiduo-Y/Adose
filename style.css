@@ -92,11 +92,13 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 h1{
   text-align: left;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 46px;
  /*font-size: calc(1rem + 1vw);*/
 }
 h2{
-
+margin: auto;
+font-size: 30px;
+padding-top: 20px;
 }
 
 h3{
@@ -112,12 +114,17 @@ h6{
   margin-top: 10px;
   text-align: left;
 }
+p{
+  font-size: 20px;
+  margin: auto;
+}
+
 
 @media (min-width: 400px) {
-  .titre {
+  h1 {
    font-size: calc(1rem + 1vw);
  } 
- .text {
+   p{
   font-size: calc(0.5rem + 1vw);
 } 
 }
@@ -128,17 +135,6 @@ h6{
   background-size: 100%;
   text-align: center;
   margin-top: 20rem;
-}
-
-.titre2{
-  margin-top: 10px;
-  text-align: center;
-  
-}
-.text2{
-  text-align: center;
-  margin-top: 10px;
-  
 }
 
 .zone2-layout {
@@ -186,10 +182,6 @@ h6{
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
-}
-
-.titre3{
-
 }
 
 .cartes-container {
@@ -297,11 +289,11 @@ h6{
 }
 .box {
   display: block;
-  width: 779px;
-  height: 309px;
+  width: 700px;
+  height: 280px;
   background: rgba(255,255,255,);
   border-radius: 40px;
-  box-shadow: 1px 3px 4px rgb(1 1 1 / 25%);
+  box-shadow: 3px 3px 4px 5px rgb(1 1 1 / 25%);
   object-position: inherit;
   margin: auto;
 }
@@ -320,11 +312,10 @@ h6{
   width: 200px;
   text-align: center;
   padding: 15px 32px; 
-  margin-top : 30px;
+  margin-top : 10px;
   transition: .3s ease-in-out;
 
 }
-
 
 .button:hover {
   transform:scale(1.05); /* Safari et Chrome */  
@@ -355,6 +346,8 @@ font-size: 10px;
 display: flex;
 justify-content: space-between;
 padding-top: 10rem;
+padding-right: 5rem;
+padding-left: 5rem;
 }
 
 @media screen and (max-width:900px) { 
