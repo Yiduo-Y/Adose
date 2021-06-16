@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puberté chez les filles</title>
+    <link rel="stylesheet" href="f-style.css">
 </head>
+
 <body>
+    <div class="burger">
+        <span></span>
+    </div>
+    <a href="index.html"><img src="img/logofinal.svg" alt=""></a>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Thèmes</a></li>
+                <li><a href="carte.html">Cardquizz</a></li>
+                <li><a href="marionettes.html">Le corps</a></li>
+                <li><a href="#">Associations</a></li>
+            </ul>
+        </nav>
     
+    </header>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $('.burger').click(function(){
+            $('.header').toggleClass('open');
+            $('.burger').toggleClass('active');
+        });
+    });
+    </script>
 </body>
 </html>

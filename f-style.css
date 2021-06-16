@@ -1,0 +1,110 @@
+@import url("https://fonts.gstatic.com"); 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+html, body {
+    height: 100%;
+    width:100%; 
+}
+
+body{
+    font-family: Montserrat, "Roboto", Helvetica, Arial, "sans-serif";
+    font-size: 1rem;
+    background-color: #FFFCF8;
+  }
+
+h1{
+    color: #FFFCF8;
+  }
+
+  ul, li{
+    list-style: none;
+  }
+.burger{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding: 8px 0;
+    cursor: pointer;
+    z-index: 200;
+    mix-blend-mode: difference;
+  }
+  .burger span,
+  .burger span:before,
+  .burger span:after{
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #383838;
+    transition: 0.3s;
+    transform-origin: center;
+  }
+  .burger span:before,
+  .burger span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+  }
+  .burger span:before{ top: 0px;}
+  .burger span:after{ bottom: 0px;}
+  
+  .burger:hover span,
+  .burger.active span{
+    background-color: rgba(255,255,255,0);
+  }
+  .burger.active span:before,
+  .burger:hover span:before{
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  .burger.active span:after,
+  .burger:hover span:after{
+    transform: rotate(135deg);
+    top: 8px;
+  }
+  header{
+    position: fixed;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#eb237a, rgb(194, 131, 157));
+    z-index: 100;
+    width: 200px;
+    transform: translateX(310px);
+    padding: 2em 2em;
+  }
+  
+  header.open{
+    transform: translateX(0);
+  }
+  
+  header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.4s;
+    display: block;
+    padding: 0.1em;
+
+  }
+  /*********** 07. Pour la transition de timeline sur les textes de menus **********/
+header ul li {
+    opacity: 100;
+  }
+  
+  header nav a:hover{
+    text-indent: 20px;
+  }
+
+.selection{
+    text-decoration: none;
+}
