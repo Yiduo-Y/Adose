@@ -146,6 +146,10 @@ p{
   background-color: rgb(194, 1, 97);
 }
 
+.imageblock{
+  width: 30%;
+}
+
 .block {
   color:white;
   text-align: center;
