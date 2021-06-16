@@ -79,24 +79,28 @@ top: 566px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.h3{
+  font-size: 30px;
+}
+
 .zone1 {
   display: flex;
   /*background-color: #FFFCF8;*/
   padding: 10%;
   background-repeat: no-repeat;
   justify-content: space-between;
+  text-align: left;
 }
 
 .titre {
  color: #201F1F;
- margin: 5px;
- text-align: center;
+ text-align: left;
 /*font-size: calc(1rem + 1vw);*/
 }
 
 .text{
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 400px) {
@@ -116,6 +120,17 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-top: 20rem;
 }
 
+.titre2{
+  margin-top: 10px;
+  text-align: center;
+  
+}
+.text2{
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
 .zone2-layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -123,6 +138,25 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   row-gap: 10px;
   max-width: 35rem;
   margin: 1rem auto 0 auto;
+}
+
+.button23{
+  display: block;
+  background-color:#FF428A ;
+  text-decoration-line: none;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 15px 32px; 
+  margin-top : 30px;
+  transition: .3s ease-in-out;
+  margin: auto;
+}
+
+.button23:hover {
+  transform:scale(1.05); /* Safari et Chrome */  
+  background-color: rgb(194, 1, 97);
 }
 
 .block {
@@ -214,7 +248,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
   .cartebleue {
     width: 148px;
-   height: 234px;  
+    height: 234px;  
     background: rgba(154,217,219,1);
     margin-top: 10px;
     border-radius: 6px;
@@ -232,6 +266,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-size: 100%;*/
   padding: 30%;
   background-repeat: no-repeat;
+}
+.marionette{
+  width: 30%;
+  display:inline-block;
+  
 }
 
 .zone5 {
@@ -251,6 +290,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 1px 3px 4px rgb(1 1 1 / 25%);
   object-position: inherit;
   margin: auto;
+}
+.adoseaide{
+  margin: auto;
+  padding-top: 3rem;
+  padding: 20px 40px;
 }
 
 .button {
@@ -282,8 +326,14 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 300px;
   text-align: center;
   padding: 15px 32px; 
-  margin-top : 30px;
+  
   transition: .3s ease-in-out;
+  margin: auto;
+  margin-top: 7rem;
+}
+.bouttonbas:hover {
+  transform:scale(1.05); /* Safari et Chrome */  
+  background-color: rgb(194, 1, 97);
 }
 
 footer {
