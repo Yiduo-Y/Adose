@@ -7,6 +7,7 @@
     <title>CarteQuizz</title>
     <link rel="stylesheet" href="c-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <div class="burger">
@@ -27,7 +28,26 @@
     </header>
 
     <main>
+        <button id="btnPopup" class="btnPopup">Afficher Popup</button>
+        <div id="overlay" class="overlay">
+            <div id="popup" class="popup">
+                <h2>Exemple simple de popup 
+                    <span id="btnClose" class="btnClose">&times;</span>
+                </h2>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a nulla a massa interdum imperdiet sed nec nibh. Proin porttitor euismod nulla ut interdum. Cras elementum placerat aliquam.
+                </div>
+            </div>
+        </div>
+
+
+        <section class="zone0"> 
+            <div>
+                <h1>choisi le thème qui t'interesse et sur le quel tu veux apprendre. </h1>
+            </div>   
+        </section>
+        
         <section class="zone1">
+            
             <div>
                 <a href="#" class="selection"><h1>Puberté chez les garçons</h1><img src="img/th1.png" alt=""></a>
             
@@ -87,6 +107,13 @@
             $('.burger').toggleClass('active');
         });
     });
+
+    var btnPopup = document.getElementById('btnPopup');
+var overlay = document.getElementById('overlay');
+btnPopup.addEventListener('click',openMoadl);
+function openMoadl() {
+overlay.style.display='block';
+}
     </script>
 </body>
 </html>
