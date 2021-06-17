@@ -132,6 +132,13 @@ header ul li {
   width: 70%;
   height: auto;
   position: relative;
+  opacity: 0.5;
+}
+.imageblock1 {
+  width: 70%;
+  height: auto;
+  position: relative;
+  
 }
 
 .zone3-layout {
@@ -143,14 +150,25 @@ header ul li {
   margin: 2rem;
 }
 
+.block1{
+  color:black;
+  text-align: center;
+  display: inline-flexbox;
+  font-size: 1rem;
+  background-color:white;
+  width: 150px;
+  
+  border-radius: 5px;
+
+}
 .block {
   color:black;
   text-align: center;
   display: inline-flexbox;
   font-size: 1rem;
-  background-color: white;
+  background-color: rgb(172, 172, 172);
   width: 150px;
-  height:280px;
+  
   border-radius: 5px;
   /* padding: 2rem 1rem; */
   
