@@ -21,7 +21,7 @@ body{
 
 h1{
     color: #FFFCF8;
-    font-size: 100%;
+    font-size: 200%;
   }
 
   ul, li{
@@ -112,43 +112,61 @@ header ul li {
 
 .selection{
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.selection h1{
+  margin-top: 3.5rem;
+  margin-left: 2rem;
+}
+.selection img{
+  width: 50%;
 }
   .zone1 {
-    padding: 15%;
+    padding: 10%;
     background-color: #59C3FF;
   }
 
   .zone2 {
-    padding: 15%;
+    padding: 10%;
     background-color: #FF7199;
   }
 
   .zone3 {
-    padding: 15%;
+    padding: 10%;
     background-color: #FBC53D;
   }
 
   .zone4 {
-    padding: 15%;
+    padding: 10%;
     background-color: #64DAA6;
   }
 
   .zone5 {
-    padding: 15%;
+    padding: 10%;
     background-color: #9AD9DB;
   }
 
   .zone6 {
-    padding: 15%;
+    padding: 10%;
     background-color: #EB96AA;
   }
 
   .zone7 {
-    padding: 15%;
+    padding: 10%;
     background-color: #BDB2FF;
   }
 
   .zone8 {
-    padding: 15%;
+    padding: 10%;
     background-color: #F8AD9D;
   }
+
+
+
+@media screen and (max-width:900px) { 
+  h1{
+    font-size: 150%;
+  }
+  
+}
