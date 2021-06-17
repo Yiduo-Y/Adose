@@ -95,10 +95,10 @@ p{
   }
 
 .back {
-    display:flex;
+  display:flex;
 	max-width: 7%;
 	height: auto;
-    position: 0 0;
+  position: 0 0;
 }
 .zone1{
   background-color: #FFFCF8;
