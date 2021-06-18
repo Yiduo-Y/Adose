@@ -107,7 +107,7 @@ h6{
 p{
   font-size: 20px;
   margin: auto;
-  text-align: left;
+  
 }
 .soustitre{
   text-align: center;
@@ -152,13 +152,13 @@ p{
 
 .block {
   color:white;
-  text-align: center;
   display: inline-flexbox;
   font-size: 20px;
   background-color: #B38FB8;
   width: 250px;
   border-radius: 5px;
-  /* padding: 2rem 1rem; */
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  padding: 1rem;
   
 }
 
@@ -166,8 +166,13 @@ p{
 .block:focus {
   box-shadow: 8px 8px 48px #A073A7(235,150,170,0.5);
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #D898E2;
+  
+}
+
+.centerBox{
+  margin: auto;
 }
 
 .imageblock {
@@ -191,22 +196,14 @@ p{
   margin: 2em;
 }
 
-.carteverte {
+.carte{
   width: 148px;
   height: 234px;
-  background: rgba(152,212,187,1);
   margin-top: 10px;
   border-radius: 6px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
-}
-.carteverte:hover,
-  .carteverte:focus {
-    box-shadow: 8px 8px 48px rgba(152,212,187,1);
-    cursor: pointer;
-    transform: scale(1.25);
-    color:white;
-}
 
+}
 .D-text{
   color: black;
   font-size: 100%;
@@ -217,71 +214,62 @@ p{
   height: auto;
   position: relative;
 }
-.cartemauve {
-  width: 148px;
-  height: 234px;
-  background: rgba(189,178,255,1);
-  margin-top: 10px;
-  border-radius: 6px;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
-}
 
-.cartemauve:hover,
-  .cartemauve:focus {
-    box-shadow: 8px 8px 48px rgba(189,178,255,1);
-    cursor: pointer;
-    transform: scale(1.25);
-    color:white;
-}
-
-  .cartesaumon {
-    width: 148px;
-    height: 234px;  
-    background: rgba(248,173,157,1);
-    margin-top: 10px;
-    border-radius: 6px;
-    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+  .carteverte {
+    background: rgba(152,212,187,1);
+  }
+  .carteverte:hover,
+    .carteverte:focus {
+      box-shadow: 8px 8px 48px rgba(152,212,187,1);
+      cursor: pointer;
+      transform: scale(1.25);
+      color:white;
   }
 
-  .cartesaumon:hover,
-  .cartesaumon:focus {
-    box-shadow: 8px 8px 48px rgba(248,173,157,1);
-    cursor: pointer;
-    transform: scale(1.25);
-    color:white;
-}
+  .cartemauve {
+    background: rgba(189,178,255,1);
+  }
+  .cartemauve:hover,
+    .cartemauve:focus {
+      box-shadow: 8px 8px 48px rgba(189,178,255,1);
+      cursor: pointer;
+      transform: scale(1.25);
+      color:white;
+  }
+
+  .cartesaumon {
+    background: rgba(248,173,157,1);
+  }
+    .cartesaumon:hover,
+    .cartesaumon:focus {
+      box-shadow: 8px 8px 48px rgba(248,173,157,1);
+      cursor: pointer;
+      transform: scale(1.25);
+      color:white;
+  }
 
   .carterose {
-    width: 148px;
-    height: 234px;
     background: rgba(235,150,170,1);
-    margin-top: 10px;
-    border-radius: 6px;
-    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
-     }
-
-     .carterose:hover,
-  .carterose:focus {
-    box-shadow: 8px 8px 48px rgba(235,150,170,1);
-    cursor: pointer;
-    transform: scale(1.25);
-    color:white;
-}
-  .cartebleue {
-    width: 148px;
-    height: 234px;  
-    background: rgba(154,217,219,1);
-    margin-top: 10px;
-    border-radius: 6px;
-    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4399999976158142);
+  }
+    .carterose:hover,
+    .carterose:focus {
+      box-shadow: 8px 8px 48px rgba(235,150,170,1);
+      cursor: pointer;
+      transform: scale(1.25);
+      color:white;
     }
+
+  .cartebleue { 
+    background: rgba(154,217,219,1);
+  }
     .cartebleue:hover,
     .cartebleue:focus {
       box-shadow: 8px 8px 48px rgba(154,217,219,1);
       cursor: pointer;
       transform: scale(1.25);
       color:white;
-  }
+    }
+
 
 .zone4 {
   padding: 30%;
@@ -383,7 +371,7 @@ padding: 10rem 2rem 2rem 2rem;
     width: 30%;
     height: 50%;
     position: absolute;
-}
+  }
   h1 {
     font-size: calc(1rem + 1vw);
     text-align: left;
@@ -391,16 +379,16 @@ padding: 10rem 2rem 2rem 2rem;
   h2 {
     font-size: calc(1rem + 1vw);
   } 
-    p{
+  
+  p{
    font-size: calc(0.5rem + 1vw);
-   text-align: left;
- } 
+  } 
   .zone2-layout {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     min-width: 1rem;
     max-width: 40rem;
-    margin: 0 auto;
+    justify-items: center;
   }
 
   body{
@@ -428,10 +416,10 @@ padding: 10rem 2rem 2rem 2rem;
     text-align: center;
   }
   .block {
-    width: 100px;
-    height:120px;
+    width: auto;
+    height: auto;
     font-size: 0.6rem;
-    margin-left: 1rem;
+    
   }
 
   .zone3{
@@ -445,38 +433,38 @@ padding: 10rem 2rem 2rem 2rem;
   .imagetheme{
     width: 100%;
   }
+  .carte{
+    font-size: 60%;
+    
+  }
   .carteverte {
     width: 25%;
     height: 5%;
-    font-size: 60%;
   }
   .cartemauve {
     width: 25%;
     height: 5%;
-    font-size: 60%;
   }
   .carterose {
     width: 25%;
     height: 5%;
-    font-size: 60%;
   }
   .cartebleue {
     width: 25%;
     height: 10%;
-    font-size: 60%;
   }
   .cartesaumon {
     width: 40%;
     height: 10%;
-    font-size: 60%;
   }
-  .zone4{
+
+.zone4{
     text-align: center;
     margin-top: 4rem;
     padding:1rem;
-    
   }
-  .zone5{
+  
+.zone5{
     margin-top: 4rem;
     padding:2rem;
   }
@@ -491,23 +479,23 @@ padding: 10rem 2rem 2rem 2rem;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 2rem 2px;
   }
-.bouttonbas{
-  width:250px;
+  .bouttonbas{
+    width:250px;
+  }
+
+.footer{
+  padding:1%;
 }
 
-  .footer{
-    padding:1%;
-  }
-
-  .burger{
-    position: fixed;
-    top: 30px;
-    right: 20px;
-    padding: 6px 0;
-    cursor: pointer;
-    z-index: 100;
-    mix-blend-mode: difference;
-  }
+.burger{
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  padding: 6px 0;
+  cursor: pointer;
+  z-index: 100;
+  mix-blend-mode: difference;
+}
   .burger span,
   .burger span:before,
   .burger span:after{
@@ -525,9 +513,12 @@ padding: 10rem 2rem 2rem 2rem;
     left: 0;
     pointer-events: none;
   }
-  .burger span:before{ top: 0px;}
-  .burger span:after{ bottom: 0px;}
-  
+  .burger span:before{ 
+    top: 0px;
+  }
+  .burger span:after{ 
+    bottom: 0px;
+  }
   .burger:hover span,
   .burger.active span{
     background-color: rgba(255,255,255,0);
