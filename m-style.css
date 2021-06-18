@@ -95,7 +95,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 
 
-  .button1f{/*barbe*/
+  .button1f{/*poil sex*/
     width: 3%;
     height: auto;
     top: 450px;
@@ -104,7 +104,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
       }
 
-  .button2f{/*barbe*/
+  .button2f{/*sein*/
     width: 3%;
     height: auto;
     top: 340px;
@@ -112,7 +112,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     position: absolute;
     
       }
-  .button3f{/*barbe*/
+  .button3f{/*poil bras*/
     width: 3%;
     height: auto;
     top: 320px;
@@ -121,7 +121,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
       }
 
-  .button4f{/*barbe*/
+  .button4f{/*poil jambes*/
     width: 3%;
     height: auto;
     top: 620px;
@@ -130,7 +130,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
       }
 
-  .button1g{/*barbe*/
+  .button1g{/*sex masculin*/
     width: 3%;
     height: auto;
     top: 475px;
@@ -138,7 +138,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     position: absolute;
     
       }
-  .button2g{ /*barbe*/
+  .button2g{ /*poil jambes*/
     width: 3%;
     height: auto;
     top: 620px;
@@ -155,7 +155,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
       }
 
-  .button4g{
+  .button4g{ /*poil bras*/
     width: 3%;
     height: auto;
     top: 345px;
@@ -163,3 +163,87 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     position: absolute;
     
       }
+
+#cercle1 {
+position: absolute;
+top: 445px;
+left: 710px;
+width: 20px;
+height: 20px;
+border-radius: 20px;
+background: #FBC53D;
+
+}
+
+#cercle2 {
+position: absolute;
+top: 475px;
+left: 710px;
+width: 20px;
+height: 20px;
+border-radius: 20px;
+background: #FBC53D;
+}
+
+#cercle3 {
+position: absolute;
+top: 505px;
+left: 710px;
+width: 20px;
+height: 20px;
+border-radius: 20px;
+background: #FBC53D;
+}
+
+#cercle4 {
+  position: absolute;
+  top: 535px;
+  left: 710px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #FBC53D;
+}
+#cercle5 {
+  position: absolute;
+  top: 565px;
+  left: 710px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #FBC53D;
+}
+#cercle6 {
+  position: absolute;
+  top: 595px;
+  left: 710px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #FBC53D;
+}
+#cercle7 {
+  position: absolute;
+  top: 625px;
+  left: 710px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #FBC53D;
+}
+
+    #rectangle {
+      position: absolute;
+        top: 445px;
+        left: 715px;
+      width  : 10px;
+      height : 200px;
+      background : #FBC53D;
+      border-radius: 1rem;
+        }
+
+/* -----slider-----
+.bar{
+color: #FF428A;
+}
+*/ 
