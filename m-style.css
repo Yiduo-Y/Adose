@@ -92,11 +92,74 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
  
 
- .button{
-    background-color:blue;
-    border: none;
-    border-radius:5px;
-    text-decoration : none;
-    width:100%;
-    height:100%;
-    }
+
+
+
+  .button1f{/*barbe*/
+    width: 3%;
+    height: auto;
+    top: 450px;
+    left: 950px;
+    position: absolute;
+    
+      }
+
+  .button2f{/*barbe*/
+    width: 3%;
+    height: auto;
+    top: 340px;
+    left: 920px;
+    position: absolute;
+    
+      }
+  .button3f{/*barbe*/
+    width: 3%;
+    height: auto;
+    top: 320px;
+    left: 1000px;
+    position: absolute;
+    
+      }
+
+  .button4f{/*barbe*/
+    width: 3%;
+    height: auto;
+    top: 620px;
+    left: 920px;
+    position: absolute;
+    
+      }
+
+  .button1g{/*barbe*/
+    width: 3%;
+    height: auto;
+    top: 475px;
+    left: 443px;
+    position: absolute;
+    
+      }
+  .button2g{ /*barbe*/
+    width: 3%;
+    height: auto;
+    top: 620px;
+    left: 423px;
+    position: absolute;
+    
+      }
+  .button3g{ /*barbe*/
+    width: 3%;
+    height: auto;
+    top: 275px;
+    left: 443px;
+    position: absolute;
+    
+      }
+
+  .button4g{
+    width: 3%;
+    height: auto;
+    top: 345px;
+    left: 488px;
+    position: absolute;
+    
+      }
