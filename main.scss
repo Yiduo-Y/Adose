@@ -16,8 +16,6 @@ body {
   color: #dfe4ea;
 
   h1 {
-    margin-bottom: 3rem;
-    text-transform: uppercase;
     font-size: 3rem;
 
     span, i {
@@ -32,7 +30,6 @@ body {
     .choices {
       display: flex;
       flex-wrap: wrap;
-      margin: 3rem auto 3rem;
       width: 500px;
 
       button {
@@ -58,7 +55,7 @@ body {
         }
       
         p {
-          font-size: 1.3rem;
+          font-size: 1rem;
         }
       }
     }
