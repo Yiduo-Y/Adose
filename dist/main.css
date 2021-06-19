@@ -28,7 +28,7 @@ body h3 {
 body .container .choices {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  width: auto;
 }
 body .container .choices button {
   flex: 1 0 45%;

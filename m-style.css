@@ -85,10 +85,9 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   
 
  .marionette{
-    width: 35%;
-    display: inline table;
-    justify-content: space-between;
-    padding: 1% 10% 10% 10%;
+  width: 15%;
+  height: auto;
+  
  }
  
 
@@ -114,6 +113,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 450px;
     left: 950px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
@@ -123,6 +123,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 340px;
     left: 920px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
   .button3f{/*poil bras*/
@@ -131,6 +132,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 320px;
     left: 1000px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
@@ -140,6 +142,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 620px;
     left: 920px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
@@ -149,6 +152,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 475px;
     left: 443px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
   .button2g{ /*poil jambes*/
@@ -157,6 +161,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 620px;
     left: 423px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
   .button3g{ /*barbe*/
@@ -165,6 +170,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 275px;
     left: 443px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
@@ -174,6 +180,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 345px;
     left: 488px;
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
@@ -185,6 +192,7 @@ width: 20px;
 height: 20px;
 border-radius: 20px;
 background: #FBC53D;
+transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
 }
 
@@ -196,6 +204,7 @@ width: 20px;
 height: 20px;
 border-radius: 20px;
 background: #FBC53D;
+transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 #cercle3 {
@@ -206,6 +215,7 @@ width: 20px;
 height: 20px;
 border-radius: 20px;
 background: #FBC53D;
+transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 #cercle4 {
@@ -216,6 +226,7 @@ background: #FBC53D;
   height: 20px;
   border-radius: 20px;
   background: #FBC53D;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #cercle5 {
   position: absolute;
@@ -225,6 +236,7 @@ background: #FBC53D;
   height: 20px;
   border-radius: 20px;
   background: #FBC53D;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #cercle6 {
   position: absolute;
@@ -234,6 +246,7 @@ background: #FBC53D;
   height: 20px;
   border-radius: 20px;
   background: #FBC53D;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #cercle7 {
   position: absolute;
@@ -243,6 +256,7 @@ background: #FBC53D;
   height: 20px;
   border-radius: 20px;
   background: #FBC53D;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
     #rectangle {
@@ -253,6 +267,7 @@ background: #FBC53D;
       height : 200px;
       background : #FBC53D;
       border-radius: 1rem;
+      transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
         }
 
 /* -----slider-----
