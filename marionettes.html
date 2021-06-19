@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="m-style.css">
     <title>découvrir le corps</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 </head>
 <div class="burger">
@@ -35,32 +34,22 @@
                 <h2>L'évolution du corps humain</h2>
                 <p class="soustitre">pendant sa puberté</p>
                 <div>
+                    <div class="boxPoils isVisible">
+                        <button class="back">svgcode</button>
+                        <p>Des poils commencent à pousser sur le visage, le pubis et sous les bras.</p> 
+                    </div>
                     <img src="img/hmarionnettes .png" alt="garçon" class="marionette">
                     <img src="img/fmarionnettes .png" alt="fille" class="marionette">
                     <img src="img/button.png" alt="button" class="button1f">
                     <img src="img/button.png" alt="button" class="button2f">
-                    <a href="poilsbrasfilles.html"> <img src="img/button.png" alt="button" class="button3f"> </a>
+                    <img src="img/button.png" alt="button" class="button3f">
                     <img src="img/button.png" alt="button" class="button4f">
                     <img src="img/button.png" alt="button" class="button1g">
                     <img src="img/button.png" alt="button" class="button2g">
                     <img src="img/button.png" alt="button" class="button3g">
                     <img src="img/button.png" alt="button" class="button4g">
 
-                    <button id="btnPopup" class="btnPopup">
-                        Afficher Popup
-                    </button>
-                    <div id="overlay" class="overlay">
-                        <div id="popup" class="popup">
-                            <h2>Exemple simple de popup 
-                                <span id="btnClose" class="btnClose">&times;
 
-                                </span>
-                            </h2>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a nulla a massa interdum imperdiet sed nec nibh. Proin porttitor euismod nulla ut interdum. Cras elementum placerat aliquam.
-                            </div>
-                        </div>
-                    </div>
 
                     <a href="#"> <div id="cercle1" ></div></a>
                     <a href="#"> <div id="cercle2"></div></a>
@@ -76,26 +65,17 @@
         </section>
     
     </main>
-    
-    <script>
-     $(document).ready(function() {
-
-function showModal() {
-    $('#popmodal-container').show();
-    $('html body').css('overflow', 'hidden');
-}
-
-function closeModal() {
-    $('#popmodal-container').hide();
-}
-
-setTimeout(showModal, 1500);
-
-$('#popclose').click(function() {
-    closeModal();
-})
-});
-        
-        </script>
+<script>
+    const buttonPoils = document.querySelector('.button3f')
+    const boxPoils = document.querySelector('.boxPoils')
+    const isVisible = document.querySelector('.isVisible')
+    const buttonBack = document.querySelector('.back')
+    buttonPoils.addEventListener('click', () => {
+        boxPoils.classList.remove('isVisible')
+    })
+    buttonBack.addEventListener('click', () => {
+        boxPoils.classList.add('isVisible')
+    })
+</script>
 </body>
 </html>

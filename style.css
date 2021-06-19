@@ -173,6 +173,7 @@ p{
 
 .centerBox{
   margin: auto;
+  padding: 1rem;
 }
 
 .imageblock {
@@ -191,9 +192,11 @@ p{
 
 .cartes-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
   position: relative;
-  margin: 2em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .carte{
@@ -202,7 +205,14 @@ p{
   margin-top: 10px;
   border-radius: 6px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+  display: flex;
 
+}
+
+carte:hover{
+  cursor: pointer;
+  transform: scale(1.25);
+  color:white;
 }
 .D-text{
   color: black;
@@ -221,9 +231,6 @@ p{
   .carteverte:hover,
     .carteverte:focus {
       box-shadow: 8px 8px 48px rgba(152,212,187,1);
-      cursor: pointer;
-      transform: scale(1.25);
-      color:white;
   }
 
   .cartemauve {
@@ -232,9 +239,6 @@ p{
   .cartemauve:hover,
     .cartemauve:focus {
       box-shadow: 8px 8px 48px rgba(189,178,255,1);
-      cursor: pointer;
-      transform: scale(1.25);
-      color:white;
   }
 
   .cartesaumon {
@@ -243,9 +247,7 @@ p{
     .cartesaumon:hover,
     .cartesaumon:focus {
       box-shadow: 8px 8px 48px rgba(248,173,157,1);
-      cursor: pointer;
-      transform: scale(1.25);
-      color:white;
+ 
   }
 
   .carterose {
@@ -254,9 +256,6 @@ p{
     .carterose:hover,
     .carterose:focus {
       box-shadow: 8px 8px 48px rgba(235,150,170,1);
-      cursor: pointer;
-      transform: scale(1.25);
-      color:white;
     }
 
   .cartebleue { 
@@ -265,9 +264,6 @@ p{
     .cartebleue:hover,
     .cartebleue:focus {
       box-shadow: 8px 8px 48px rgba(154,217,219,1);
-      cursor: pointer;
-      transform: scale(1.25);
-      color:white;
     }
 
 
@@ -427,36 +423,18 @@ padding: 10rem 2rem 2rem 2rem;
     margin-top: 6rem;
     padding:1rem;
   }
-  .cartes-container {
-    margin-left: 1rem;
-  }
   .imagetheme{
     width: 100%;
   }
   .carte{
     font-size: 60%;
-    
+    width: auto;
+    height: auto;
+    margin: inherit;
+    margin: 1rem;
+    max-width: 40%;
   }
-  .carteverte {
-    width: 25%;
-    height: 5%;
-  }
-  .cartemauve {
-    width: 25%;
-    height: 5%;
-  }
-  .carterose {
-    width: 25%;
-    height: 5%;
-  }
-  .cartebleue {
-    width: 25%;
-    height: 10%;
-  }
-  .cartesaumon {
-    width: 40%;
-    height: 10%;
-  }
+
 
 .zone4{
     text-align: center;

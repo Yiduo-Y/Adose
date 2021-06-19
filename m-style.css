@@ -92,7 +92,20 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
  
 
+.boxPoils{
+  background-color: pink;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 5px;
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
 
+.isVisible{
+  opacity: 0;
+  pointer-events: none;
+}
 
 
   .button1f{/*poil sex*/
@@ -248,35 +261,3 @@ color: #FF428A;
 }
 */ 
 
-.btnPopup{
-  background-color: orangered;
-  padding: 1em 2em;
-  cursor: pointer;
-  }
-
-  .btnPopup:hover{
-    background-color: rgb(192, 192, 192);}
-    .overlay {
-      position: fixed;
-      left: 0px;
-      top:0px;
-      background-color: rgba(0,0 ,0 , 0.5);
-      width: 100%;
-      height: 100%;
-      z-index:1;
-      display:none;
-      }
-      .popup{
-        margin: 10% auto;
-        width : 70%;
-        background-color: rgb(243, 243, 243);
-        padding: 1em;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        }
-        .btnClose {
-          float: right;
-          font-size:16pt;
-          cursor: pointer;
-          color: rgb(26, 26, 26);
-          }
