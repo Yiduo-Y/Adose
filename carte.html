@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarteQuizz</title>
     <link rel="stylesheet" href="c-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
 </head>
@@ -28,17 +30,32 @@
     </header>
 
     <main>
-        <button id="btnPopup" class="btnPopup">Afficher Popup</button>
-        <div id="overlay" class="overlay">
-            <div id="popup" class="popup">
-                <h2>Exemple simple de popup 
-                    <span id="btnClose" class="btnClose">&times;</span>
-                </h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a nulla a massa interdum imperdiet sed nec nibh. Proin porttitor euismod nulla ut interdum. Cras elementum placerat aliquam.
+        <popbody>
+
+            <div class="popcontainer">
+        
+                <div class="popmodal-container" id="popmodal-container">
+                    <div class="popmodal" id="popmodal">
+                        <button class="popclose-btn" id="popclose"><i class="fa fa-times"></i></button>
+                        <div class="popmodal-content">
+                            <div class="popheader">
+                                <div class="h2 poplogo">Code de jeu</div>
+                                <p class="poptagline">Avant de commencer</p>
+                                <p>Ce code te permet de sauvegarder ta progression, si tu changes d'appareil, il te faudra rentrer ce code pour reprendre là où tu en étais.</p>
+                            </div>
+                            <form>
+                                <input type="text" placeholder="BJR44">
+                                <button class="popsubscribe">Copier</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </popbody>
+        
 
         <section class="zone0"> 
             <div>
