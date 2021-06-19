@@ -29,32 +29,12 @@
     </header>
 
     <main>
-        <popbody>
-
-            <div class="popcontainer">
+        <div class="boxPoils isVisible">
+            <button class="back">svgcode</button>
+            <h4>Des poils commencent à pousser sur le visage, le pubis et sous les bras.</h4> 
+        </div>
         
-                <div class="popmodal-container" id="popmodal-container">
-                    <div class="popmodal" id="popmodal">
-                        <button class="popclose-btn" id="popclose"><i class="fa fa-times"></i></button>
-                        <div class="popmodal-content">
-                            <div class="popheader">
-                                <div class="h2 poplogo">Code de jeu</div>
-                                <p class="poptagline">Avant de commencer</p>
-                                <p>Ce code te permet de sauvegarder ta progression, si tu changes d'appareil, il te faudra rentrer ce code pour reprendre là où tu en étais.</p>
-                            </div>
-                            <form>
-                                <input type="text" placeholder="BJR44">
-                                <button class="popsubscribe">Copier</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="script.js"></script>
-        </popbody>
-        
+        <div><img src="img/button.png" alt="button" class="button3f"></div>
 
         <section class="zone0"> 
             <div>
@@ -115,21 +95,17 @@
 
     </main>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-        $('.burger').click(function(){
-            $('.header').toggleClass('open');
-            $('.burger').toggleClass('active');
-        });
-    });
-
-    var btnPopup = document.getElementById('btnPopup');
-var overlay = document.getElementById('overlay');
-btnPopup.addEventListener('click',openMoadl);
-function openMoadl() {
-overlay.style.display='block';
-}
+    <script>
+        const buttonPoils = document.querySelector('.button3f')
+        const boxPoils = document.querySelector('.boxPoils')
+        const isVisible = document.querySelector('.isVisible')
+        const buttonBack = document.querySelector('.back')
+        buttonPoils.addEventListener('click', () => {
+            boxPoils.classList.remove('isVisible')
+        })
+        buttonBack.addEventListener('click', () => {
+            boxPoils.classList.add('isVisible')
+        })
     </script>
 </body>
 </html>
