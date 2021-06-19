@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 html, body {
   height: 100%;
@@ -16,11 +16,38 @@ html, body {
 body {
   background-color: #FF7199;
   display: grid;
-  align-items: center;
-  justify-items: center;
-  min-height: 100vh;
+/*   align-items: center;
+  justify-items: center; */
+  /* min-height: 100vh; */
   color: #dfe4ea;
 }
+
+h2{
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+h3{
+padding: 1rem 0 0 0 ;
+color: #7A42EE;
+font-size: 100%;
+}
+h4{
+  text-align: right;
+  padding-right: 90px;
+  color: #fff;
+  font-size: 100%;
+  opacity: 50%;
+}
+p{
+  text-align: center;
+}
+
+ul, li{
+  list-style: none;
+}
+
 .burger{
   position: fixed;
   top: 30px;
@@ -77,6 +104,9 @@ header{
   transform: translateX(310px);
   padding: 2em 2em;
 }
+.img-header {
+  padding:2rem 1rem 1rem 2rem;
+}
 
 .back {
 display:flex;
@@ -86,6 +116,7 @@ position: 0 0;
 }
 .zone1{
 background-color: #FFFCF8;
+height: 70px;
 }
 header.open{
   transform: translateX(0);
@@ -108,13 +139,18 @@ header ul li {
 header nav a:hover{
   text-indent: 20px;
 }
+
+
 .code{
 display: flex;
-padding: 2rem;
+align-items: center;
+
 
 }
 .code h1{
-padding-left: 35%;
+  display: flex;
+  font-size: 25px;
+  padding-left: 160px;
 color: #fff;
 }
 .code img{
@@ -123,16 +159,104 @@ height: 100%;
 }
 
 .filles{
-display: flexß;
+  opacity: 50%;
+display: flex;
 width:80%;
 text-align: center;
 padding-left: 28%;
 }
 
+.carte {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative; 
+  width: 300px !important;
+  height: 380px !important;
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+
+  z-index: 10; 
+  color:black;
+  text-align: left;
+  /* display: inline-flexbox; */
+  font-size: 1rem;
+  background-color:white;
+  padding: 3rem;
+}
+.carte p{
+  padding-bottom: 50px;
+  color: #7A42EE;
+}
+
+/* .carte1 {
+  position: relative; 
+  width: 250px !important;
+  height: 380px !important;
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+  color:black;
+  text-align: left;
+  font-size: 1rem;
+  background-color:white;
+  padding: 2rem;
+
+} */
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttonrose {
+  z-index: 20; 
+  position:relative;
+  background-color:#FF006E;
+  text-decoration-line: none;
+  color: white;
+  border-radius: 15px;
+  width: 300px;
+  padding: 15px 32px; 
+  transition: .3s ease-in-out;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+}
+
+.buttonrose:hover {
+  transform:scale(1.05); /* Safari et Chrome */  
+  background-color: rgb(194, 1, 97);
+}
+.toutpublic{
+  position: relative; 
+  width: 400px !important;
+  height: 800px !important;
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
+  color:black;
+  text-align: left !important;
+  font-size: 1rem;
+  background-color:white;
+  padding: 2rem;
+}
+.acne{
+  color: #7A42EE;
+  flex: 1 0 45%;
+  width: 300px;
+  height: 40px !important;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  background: white;
+  font-weight: 300;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 body h1 {
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  font-size: 3rem;
+  margin-top: 3rem; 
+  margin-left: 4rem;
+  /* text-transform: uppercase; */
+  font-size: 1rem;
+  text-align: left;
 }
 body h1 span, body h1 i {
   color: white;
@@ -142,27 +266,28 @@ body h3 {
   font-size: 1.5rem;
 }
 body .container .choices {
-  display: flex;
-  flex-wrap: wrap;
+  display: relative;
+  /* flex-wrap: wrap; */
   margin: 3rem auto 3rem;
   width: 500px;
 }
-body .container .choices button {
+body .container button {
   flex: 1 0 45%;
-  width: 200px;
+  width: 400px;
   height: 80px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   border: none;
   margin: 0.4rem;
   outline: none;
-  background: #dfe4ea;
+  background: white;
   user-select: none;
   font-weight: 600;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 body .container .choices button:hover {
   color: #7C40EE;
-  background: white;
+  background: #FEF8F5;
   transition: 0.5s;
 }
 body .container .choices button:active {

@@ -8,11 +8,11 @@ class Question {
     return this.answer === choice;
   }
 }
-let questions = [
-  new Question("Quelle méthode Javascript permet de filtrer les éléments d'un tableau", ["indexOf()", "map()", "filter()", "reduce()"], "filter()"),
-  new Question("Quelle méthode Javascript permet de vérifier si un élément figure dans un tableau", ["isNaN()","includes()", "findIndex()", "isOdd()"], "includes()"),
-  new Question("Quelle méthode transforme du JSON en un objet Javascript ?", ["JSON.parse()","JSON.stringify()", "JSON.object()", "JSON.toJS"], "JSON.parse()"),
-  new Question("Quel objet Javascript permet d'arrondir à l'entier le plus proche", ["Math.ceil()","Math.floor()", "Math.round()", "Math.random()"], "Math.round()")
+const questions = [
+  new Question("Le SPM, qu’est-ce que c’est?", ["Le syndrome prémenstruel", "Une maladie sexuelle", "Serviette de protection"]),
+  new Question("Bonne réponse ! ", ["Le syndrome prémenstruel"]),
+  new Question("Le SPM, c’est le syndrome prémenstruel: un ensemble de symptômes temporaires qui apparaissent environ une semaine avant l’arrivée de tes règles. C'est différent pour chaque fille, tu peux parfois constater que ton humeur change ou ressentir certains inconforts physiques.", ["Continuer"]),
+  new Question("Pour en apprendre d'avantage ", ["Question 1 : SPM", "Question 2 : Seins", "Question 3 : Acné", "Question 4 : Poils", "Question 5 : première règle", "Question 6 : Émotions"]),
 ];
 
 class Quiz {
@@ -42,8 +42,21 @@ const display = {
   },
   endQuiz: function() {
     endQuizHTML = `
-      <h1>Quiz terminé !</h1>
-      <h3> Votre score est de : ${quiz.score} / ${quiz.questions.length}</h3>`;
+    <button class="acne"> Question 3 : Acné </button>
+      <h1> Tout public </h1>
+      <button class="toutpublic">
+      <p>Qu’est-ce que l’acné ?</p>
+
+      L’acné est une dermatose chronique bénigne, mais gênante sur le plan esthétique. Elle évolue par poussées, atteint principalement le visage, et peut parfois avoir des conséquences psychologiques importantes. Elle est fréquente chez l’adolescent (plus de 70% des garçons), et régresse dans plus de 90% des cas avant 20-25 ans. Le traitement est simple : des crèmes et traitements oraux seront associés à des mesures d’hygiène.
+  
+      <p>On distingue 3 types de lésions:</p>
+      
+      l’hyper-séborrhée (aspect gras au toucher de la peau, prédominant sur le nez, le front, les joues et la région thoracique supérieure, et qui donne un aspect brillant au visage),
+      les lésions rétentionnelles (comédons = points noirs, kystes = points blancs),
+      les lésions inflammatoires, «rouges» pouvant être douloureuses (papules = lésions rouges, pustules = points blancs sur fond rouge).
+      Les facteurs responsables de l’acné sont divers. Il existerait un lien héréditaire pour les acnés sévères et un lien avéré avec les changements hormonaux. C’est pourquoi l’adolescence est la période la plus propice à ce problème tout comme la période des règles ou de la grossesse chez les femmes.</button>
+      <a href="page-filles.html" class="buttonrose">Revenir aux thèmes</a> 
+    <h3> Résultat : ${quiz.score} / ${quiz.questions.length}</h3>`;
     this.elementShown("quiz", endQuizHTML);
   },
   question: function() {
@@ -51,6 +64,16 @@ const display = {
   },
   choices: function() {
     let choices = quiz.getCurrentQuestion().choices;
+    document.getElementById("choices").innerHTML = "";
+    let i = 0;
+
+    choices.forEach(choice => {
+      document.getElementById("choices").innerHTML +=
+      `
+      <button id="guess${i}" class="btn"><p id="choice${i}">${choice}</p></button>
+      `;
+      i++;
+    });
 
     guessHandler = (id, guess) => {
       document.getElementById(id).onclick = function() {
