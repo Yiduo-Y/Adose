@@ -121,6 +121,10 @@ header ul li {
 .selection img{
   width: 50%;
 }
+button{
+  background-color: transparent;
+  border: none;
+}
 .boxPoils{
   border-radius: 5px;
   opacity: 1;
