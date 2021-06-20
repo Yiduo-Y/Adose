@@ -226,7 +226,7 @@ header ul li {
 }
 .toutpublic{
   position: relative; 
-  width: 400px;
+  width: 400px!important;
   height: 800px !important;
   border-radius: 6px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);

@@ -140,7 +140,7 @@ h4{
   .button1f{/*poil sex*/
     width: 3%;
     height: auto;
-    top: 450px;
+    top: 495px;
     left: 950px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -150,7 +150,7 @@ h4{
   .button2f{/*sein*/
     width: 3%;
     height: auto;
-    top: 340px;
+    top: 370px;
     left: 920px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -159,7 +159,7 @@ h4{
   .button3f{/*poil bras*/
     width: 3%;
     height: auto;
-    top: 320px;
+    top: 365px;
     left: 1000px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -169,7 +169,7 @@ h4{
   .button4f{/*poil jambes*/
     width: 3%;
     height: auto;
-    top: 620px;
+    top: 660px;
     left: 920px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -179,7 +179,7 @@ h4{
   .button1g{/*sex masculin*/
     width: 3%;
     height: auto;
-    top: 475px;
+    top: 510px;
     left: 443px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -188,17 +188,8 @@ h4{
   .button2g{ /*poil jambes*/
     width: 3%;
     height: auto;
-    top: 620px;
+    top: 660px;
     left: 423px;
-    position: absolute;
-    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
-    
-      }
-  .button3g{ /*barbe*/
-    width: 3%;
-    height: auto;
-    top: 275px;
-    left: 443px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
@@ -207,7 +198,7 @@ h4{
   .button4g{ /*poil bras*/
     width: 3%;
     height: auto;
-    top: 345px;
+    top: 390px;
     left: 488px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
