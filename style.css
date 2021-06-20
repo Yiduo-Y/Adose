@@ -24,18 +24,20 @@ body{
     background-color: #FFFCF8;
   
   }
-
+ 
 .header{
     display: flex;
     justify-content: space-between;
     filter: drop-shadow(0px 1px 6px rgba(251, 199, 66, 0.3));
-    padding: 2%;
+     /* padding: 20px; */
+    padding-left: 800px;
   }
 
-header img {
-    width: 100%;
-    height: 80%;
-    margin: 0.2px 2px 0 0 ;
+.headerimg {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin: auto;
 }
 
 header nav ul li{
@@ -466,7 +468,7 @@ padding: 10rem 2rem 2rem 2rem;
 
 @media screen and (max-width:900px) { 
   header nav ul li a{
-    opacity: 0;
+    opacity: 100;
   }
   header img {
     margin: 2px 3px ;
@@ -576,37 +578,93 @@ padding: 10rem 2rem 2rem 2rem;
   position: fixed;
   top: 30px;
   right: 20px;
-  padding: 6px 0;
+  padding: 8px 0;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
   mix-blend-mode: difference;
+  margin: auto;
 }
-  .burger span,
-  .burger span:before,
-  .burger span:after{
-    display: block;
-    height: 2px;
-    width: 20px;
-    background-color: #383838;
-    transition: 0.3s;
-    transform-origin: center;
-  }
-  .burger span:before,
-  .burger span:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-  }
-  .burger span:before{ 
-    top: 0px;
-  }
-  .burger span:after{ 
-    bottom: 0px;
-  }
-  .burger:hover span,
-  .burger.active span{
-    background-color: rgba(255,255,255,0);
-  }
+.burger span,
+.burger span:before,
+.burger span:after{
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #383838;
+  transition: 0.3s;
+  transform-origin: center;
+}
+.burger span:before,
+.burger span:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+}
+.burger span:before{ top: 0px;}
+.burger span:after{ bottom: 0px;}
+
+.burger:hover span,
+.burger.active span{
+  background-color: rgba(255,255,255,0);
+}
+.burger.active span:before,
+.burger:hover span:before{
+  transform: rotate(45deg);
+  top: 8px;
+}
+.burger.active span:after,
+.burger:hover span:after{
+  transform: rotate(135deg);
+  top: 8px;
+}
+.header{
+  position: fixed;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#ffffff, rgb(233, 191, 209));
+  z-index: 100;
+  width: 200px;
+  transform: translateX(310px);
+  padding: 2em 2em;
+}
+
+.img-header {
+  padding:2rem 1rem 1rem 2rem;
+}
+
+.back {
+display:flex;
+max-width: 7%;
+height: auto;
+position: 0 0;
+}
+.zone1{
+background-color: #FFFCF8;
+}
+.header.open{
+  transform: translateX(0);
+}
+
+.header nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.4s;
+  display: block;
+  padding: 0.1em;
+
+}
+/*********** 07. Pour la transition de timeline sur les textes de menus **********/
+.header ul li {
+  opacity: 100;
+}
+
+.header nav a:hover{
+  text-indent: 20px;
+}
 }
 
