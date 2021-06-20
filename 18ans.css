@@ -83,11 +83,13 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
   }
 
-  p{
+  h6{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     top: 390px;
-    left: 695px;
-    font-weight: bold;
+    left: 685px;
+    font-size: 20px;
+    font-weight: 900;
 
   }
   
