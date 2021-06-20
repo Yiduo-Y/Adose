@@ -24,6 +24,9 @@ body{
     background-color: #FFFCF8;
   
   }
+header{
+  margin: 2rem;
+}
  
 .header{
     display: flex;
