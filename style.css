@@ -202,6 +202,7 @@ p{
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  
 }
 
 .carte{
@@ -211,6 +212,7 @@ p{
   border-radius: 6px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4399999976158142);
   display: flex;
+  margin: 10px;
 
 }
 
@@ -293,7 +295,7 @@ carte:hover{
 .box {
   display: block;
   width: 700px;
-  height: 280px;
+  height: 170px;
   background: rgba(255,255,255,);
   border-radius: 40px;
   box-shadow: 3px 3px 4px 5px rgb(1 1 1 / 25%);
@@ -309,9 +311,9 @@ h4{
   font-size: 80%;
 }
 .h3adoseaide{
-  margin: 1rem 2rem 1rem 1rem;
-  padding: 40px 20px;
+  margin: 1rem 1rem 0rem 1rem;
   text-align: left;
+  padding: 60px 20px 30px 20px;
 }
 .h4adoseaide{
   margin: 1rem 2rem 1rem 1rem;
@@ -349,7 +351,6 @@ h4{
   padding: 15px 32px; 
   transition: .3s ease-in-out;
   margin: auto;
-  margin-top: 3rem;
 }
 .bouttonbas:hover {
   transform:scale(1.05); /* Safari et Chrome */  
