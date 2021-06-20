@@ -67,6 +67,13 @@ header nav ul li a{
       height: 100%;
   }
 
+.button{
+  position: fixed;
+  font-size: 400px;
+  opacity: 0;
+}
+
+
   .footer-clean {
     /*   display: flex;
       justify-content: center; */
