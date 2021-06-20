@@ -143,8 +143,9 @@ header ul li {
   opacity: 0;
   pointer-events: all;
   position: absolute;
-  width: 400px;
-  margin-top: -263px;
+  width: 150px;
+  top: 100px;
+  left: 250px;
 }
 
 .isVisible{
