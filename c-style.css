@@ -207,6 +207,25 @@ input[type=text] {
   font-weight: 700;
 }
 
+.conection{
+  margin: auto;
+  text-align: center;
+  margin: 1.5rem;
+  padding-left: 37px;
+}
+
+
+
+.seconnecter {
+  padding: 11px;
+  text-transform: uppercase;
+  background-color: #9ad9db;
+  outline: none;
+  border: none;
+  color: #eb237a;;
+  font-weight: 700;
+}
+
 ::placeholder {
   color: white;
 }
