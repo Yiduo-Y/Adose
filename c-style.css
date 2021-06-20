@@ -131,12 +131,21 @@ header ul li {
   top: 50%;
   left: 50%;
   width: 400px;
-  height: 586px;
+  height: auto;
   margin-top: -263px;
   margin-left: -200px;
-  background-color: #fff;
+  background-color: #9ad9db;
   z-index: 2;
   padding: 5px;
+}
+
+.button3f{
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  width: 150px;
+  top: 100px;
+  left: 250px;
 }
 
 .isVisible{
@@ -144,6 +153,59 @@ header ul li {
   pointer-events: none;
 }
 
+
+.poplogo {
+  font-family: Montserrat, "Roboto", Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.poptagline {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 5px;
+}
+
+p{
+  text-align: left;
+  margin: 5px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.copier{
+  margin: auto;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+input[type=text] {
+  padding: 8px;
+  outline: none;
+  border: 3px solid #9ad9db;
+  background-color: #eb237a;
+  color: white;
+  text-align: center;
+}
+
+.popsubscribe {
+  padding: 11px;
+  text-transform: uppercase;
+  background-color: #9ad9db;
+  outline: none;
+  border: none;
+  color: #eb237a;;
+  font-weight: 700;
+}
+
+::placeholder {
+  color: white;
+}
   .zone1 {
     padding: 10%;
     background-color: #59C3FF;
@@ -184,12 +246,7 @@ header ul li {
     background-color: #F8AD9D;
   }
 
-  .popcontainer {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+
   .btn {
     padding: 10px 20px;
     background: none;
@@ -206,93 +263,7 @@ header ul li {
     transition: 0.5s;
 }
 
-.popmodal-container {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: none;
-}
 
-.popmodal {
-    color: white;
-    background-color: rgba(248, 173, 157, 1);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    width: 500px;
-    height: 300px;
-}
-
-.popmodal-content {
-    padding: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-}
-
-.popheader {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-.poplogo {
-    font-family: 'Lobster';
-    font-size: 35px;
-}
-
-.poptagline {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-input[type=text] {
-    padding: 8px;
-    outline: none;
-    border: 3px solid white;
-    background-color: rgba(248, 173, 157, 1);
-    color: white;
-    text-align: center;
-}
-
-::placeholder {
-    color: white;
-}
-
-.popsubscribe {
-    padding: 11px;
-    text-transform: uppercase;
-    background-color: white;
-    outline: none;
-    border: none;
-    color: rgba(248, 173, 157, 1);
-    font-weight: 700;
-}
-
-.popclose_btn {
-    background: transparent;
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: white;
-    outline: none;
-    border: none;
-    margin-right: 15px;
-    margin-top: 10px;
-}
 @media screen and (max-width:900px) { 
   h1{
     font-size: 150%;
