@@ -74,6 +74,10 @@ button{
   border: none;
 }
 
+.soustitre{
+  margin: 1rem 15rem;
+
+}
 input {
   fill-opacity: #FF428A;
 width: 233px;
@@ -140,26 +144,18 @@ h4{
   .button1f{/*poil sex*/
     width: 3%;
     height: auto;
-    top: 495px;
+    top: 535px;
     left: 950px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     
       }
 
-  .button2f{/*sein*/
-    width: 3%;
-    height: auto;
-    top: 370px;
-    left: 920px;
-    position: absolute;
-    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
-    
-      }
+
   .button3f{/*poil bras*/
     width: 3%;
     height: auto;
-    top: 365px;
+    top: 405px;
     left: 1000px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -169,7 +165,7 @@ h4{
   .button4f{/*poil jambes*/
     width: 3%;
     height: auto;
-    top: 660px;
+    top: 700px;
     left: 920px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -179,7 +175,7 @@ h4{
   .button1g{/*sex masculin*/
     width: 3%;
     height: auto;
-    top: 510px;
+    top: 550px;
     left: 443px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -188,7 +184,7 @@ h4{
   .button2g{ /*poil jambes*/
     width: 3%;
     height: auto;
-    top: 660px;
+    top: 700px;
     left: 423px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -198,7 +194,7 @@ h4{
   .button4g{ /*poil bras*/
     width: 3%;
     height: auto;
-    top: 390px;
+    top: 420px;
     left: 488px;
     position: absolute;
     transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
