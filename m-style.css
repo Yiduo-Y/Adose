@@ -82,10 +82,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .zone1 {
     text-align: center;
   }
-  p{
+  .zone1 p{
     position: absolute;
     top: 390px;
     left: 695px;
+    font-size: 20px;
     font-weight: bold;
 
   }

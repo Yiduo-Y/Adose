@@ -45,7 +45,19 @@ p{
   ul, li{
     list-style: none;
   }
-.burger{
+
+
+.back {
+  display:flex;
+	max-width: 7%;
+	height: auto;
+  position: 0 0;
+}
+.zone1{
+  background-color: #FFFCF8;
+}
+
+  .burger{
     position: fixed;
     top: 30px;
     right: 20px;
@@ -102,19 +114,10 @@ p{
     padding: 2em 2em;
   }
   
-  .img-header {
-    padding:2rem 1rem 1rem 2rem;
-  }
+.img-header {
+  padding:2rem 0 1rem 2rem;
+}
 
-.back {
-  display:flex;
-	max-width: 7%;
-	height: auto;
-  position: 0 0;
-}
-.zone1{
-  background-color: #FFFCF8;
-}
   header.open{
     transform: translateX(0);
   }
@@ -136,6 +139,7 @@ header ul li {
   header nav a:hover{
     text-indent: 20px;
   }
+
 .code{
   display: flex;
   padding: 2rem;
